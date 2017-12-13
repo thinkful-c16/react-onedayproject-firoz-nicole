@@ -5,7 +5,7 @@ export default function Question(props) {
  
     return (
         <div>
-            <input className="question" type="text"></input>
+            <input className="question" type="text" id="questionBox" value={props.value}></input>
             <button onClick={() => props.onSubmit()} >Submit</button>
         </div>    
     )
