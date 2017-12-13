@@ -6,14 +6,23 @@ import Answer from './Answer';
 export default class App extends React.Component {
   constructor(props) {
     super(props)
-    //this.state {}
+    this.state = {
+      response: false,
+      value: ''
+    }
+  }
+
+  onSubmission() {
+    this.setState ({
+      response: true
+    })
   }
   
   
   render()  {
     return (
       <div>
-        <Question />
+        <Question questionValue={this.state.value}/>
         <Answer />
       </div>
     );
