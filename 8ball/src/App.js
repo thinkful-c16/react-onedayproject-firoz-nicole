@@ -8,25 +8,38 @@ export default class App extends React.Component {
     super(props)
     this.state = {
       response: false,
-      value: ''
+      // value: ''
     }
   }
 
-  onSubmission() {
+  onSubmit() {
+    // event.preventDefault();
     this.setState ({
       response: true
     })
   }
-  
+
   
   render()  {
+    if (!(this.state.response)) {
     return (
       <div>
-        <Question questionValue={this.state.value}/>
-        <Answer />
+        <Question onSubmit={() => this.onSubmit()}/>
+
       </div>
-    );
+    )}
+      else {
+      return (
+        <div>
+          <Question 
+          onSubmit={() => this.onSubmit()}
+          />
+          <Answer />
+        </div>
+      )
+    }
   }
-}
+ }
+
 
 

@@ -1,18 +1,18 @@
 import React from 'react';
+import Answer from './Answer';
 
-export default function Question(props){
-
+export default function Question(props) {
+ 
     return (
         <div>
-           <form>     
-               <input className="question" type="text" value=""  
-                onSubmit={event => props.onSubmit(event.target.value) }></input>
-            </form>
+            <input className="question" type="text"></input>
+            <button onClick={() => props.onSubmit()} >Submit</button>
         </div>    
     )
+ 
 }
 
-
+//value="" 
 
 //=== potential features ===
 //history of questions/answers
