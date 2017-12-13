@@ -2,18 +2,22 @@ import React from 'react';
 
 import './question.css';
 
-export default function Question(props) {
- 
-    return (
-        <div>
-            <h1>Magic 8 Ball</h1>
-                <div className="questionDiv">
-                    <input className="question" type="text" id="questionBox" required/>
-                    <button onClick={() => props.onSubmit()} >Submit</button>
-                </div>
-        </div>    
-    )
- 
+export default class Question extends React.Component {
+    constructor(props){
+        super(props)
+    }
+
+    render(){
+        return (
+            <div>
+                <h1>Magic 8 Ball</h1>
+                    <div className="questionDiv">
+                        <input className="question" type="text" id="questionBox" required/>
+                        <button onClick={() => this.props.onSubmit()} >Submit</button>
+                    </div>
+            </div>    
+        )
+}
 }
 
 //=== potential features ===
