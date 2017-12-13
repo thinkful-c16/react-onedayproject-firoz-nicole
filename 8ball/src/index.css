@@ -1,5 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  padding: 0;
+  margin: auto;
   font-family: sans-serif;
 }
+
+/* div {
+  display: block;
+  margin: 0 auto;
+  width: 960px;
+} */

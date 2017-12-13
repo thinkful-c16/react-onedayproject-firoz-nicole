@@ -1,12 +1,16 @@
 import React from 'react';
-import Answer from './Answer';
+
+import './question.css';
 
 export default function Question(props) {
  
     return (
         <div>
-            <input className="question" type="text" id="questionBox" />
-            <button onClick={() => props.onSubmit()} >Submit</button>
+            <h1>Magic 8 Ball</h1>
+                <div className="questionDiv">
+                    <input className="question" type="text" id="questionBox" required/>
+                    <button onClick={() => props.onSubmit()} >Submit</button>
+                </div>
         </div>    
     )
  

@@ -1,0 +1,20 @@
+.answer {
+    position: relative;
+    margin: 0 auto;
+    
+    width: 50%;
+    top: 45%;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.circle {
+    margin: auto;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    background-color: black;
+}
