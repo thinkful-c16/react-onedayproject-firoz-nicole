@@ -12,6 +12,7 @@ export default class App extends React.Component {
   }
 
   onSubmit() {
+    document.getElementById("questionBox").value='';
     this.setState ({
       response: true
     })

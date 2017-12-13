@@ -5,14 +5,12 @@ export default function Question(props) {
  
     return (
         <div>
-            <input className="question" type="text" id="questionBox" value={props.value}></input>
+            <input className="question" type="text" id="questionBox" />
             <button onClick={() => props.onSubmit()} >Submit</button>
         </div>    
     )
  
 }
-
-//value="" 
 
 //=== potential features ===
 //history of questions/answers
