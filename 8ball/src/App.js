@@ -1,15 +1,21 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Question from './Question';
 
-class App extends Component {
-  render() {
+export default class App extends React.Component {
+  constructor(props) {
+    super(props)
+    //this.state {}
+  }
+  
+  
+  render()  {
     return (
       <div>
-  
+        <Question />
       </div>
     );
   }
 }
 
-export default App;
+
