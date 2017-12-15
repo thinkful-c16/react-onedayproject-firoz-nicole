@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Question from './Question';
 import Answer from './Answer';
+import History from './history';
 const data = require('./8ballresponse.json');
 
 
@@ -55,6 +56,7 @@ export default class App extends React.Component {
           onSubmit={() => this.onSubmit()}
           />
           <Answer answer={this.state.currentAnswer}/>
+          <History questionHistory={this.state.questions} answerHistory={this.state.answers}/>
         </div>
       )
     }

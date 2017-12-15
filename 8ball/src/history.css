@@ -1,0 +1,9 @@
+.history {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.history-list {
+    list-style-type: none;
+    text-align: center;
+}
